@@ -16,7 +16,7 @@ void f_mod(stack_t **head, unsigned int counter)
 		hd = hd->next;
 		l++;
 	}
-	if (len < 2)
+	if (l < 2)
 	{
 		fprintf(stderr, "L%d: can't mod, stack too short\n", counter);
 		fclose(bus.file);

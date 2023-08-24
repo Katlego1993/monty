@@ -17,7 +17,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		{"nop", f_nop},
 		{"sub", f_sub},
 		{"div", f_div},
-		{"mu"l, f_mul},
+		{"mul", f_mul},
 		{"mod", f_mod},
 		{"pchar", f_pchar},
 	        {"pstr", f_pstr},
@@ -48,5 +48,6 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		fclose(file);
 		free(content);
 		free_stack(*stack);
-		exit(EXIT_FAILURE);}
-	RETURN (1);
+		exit(EXIT_FAILURE); }
+	return (1);
+}
